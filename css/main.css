@@ -8,17 +8,26 @@
    --border-radius: 25px;
 }
 
+*{
+    box-sizing: border-box;
+} 
 
 body{
     font-family:'Outfit';
     font-size: 15px;
+    margin: 0;
+    background-color: var(--color-Slate-500);
+    /* padding: 2em; */
 }
 
 .wrapper{
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
-    background-color: var(--color--Slate-300);
-    padding: 2em;
+    height: 100vh;
+    /* centering vertically: elements take height of their children! */
 }
 
 .qr-container{
@@ -26,9 +35,7 @@ body{
     background-color: var(--color-white);
     padding: 1em;
     text-align: center;
-    margin: auto;
-    box-shadow: 1em 1em 1em var(--color-Slate-500);
-    /* margin left right does not affect text??? */
+    box-shadow: 1em 1em 1em var(--color-Slate-900);
     border-radius: var(--border-radius);
 }
 
